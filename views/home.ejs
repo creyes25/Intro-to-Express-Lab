@@ -12,13 +12,11 @@
   <ul>
     <% bucketList.forEach(bucket => { %>
       <li>
-				<%= bucket.text %> 
+				<%= bucket.bucket %> 
 				- 
 				<%= bucket.complete ? 'Complete' : 'Not Complete' %>
 			</li>
     <% }) %>
-    
-
   </ul>
 </body>
 </html>
