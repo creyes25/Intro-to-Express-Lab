@@ -8,13 +8,13 @@
   <title>Home Page</title>
 </head>
 <body>
-  <h1>To Do: </h1>
+  <h1>Bucket List: </h1>
   <ul>
-    <% todos.forEach(todo => { %>
+    <% bucketList.forEach(bucket => { %>
       <li>
-				<%= todo.text %> 
+				<%= bucket.text %> 
 				- 
-				<%= todo.done %>
+				<%= bucket.complete ? 'Complete' : 'Not Complete' %>
 			</li>
     <% }) %>
     
